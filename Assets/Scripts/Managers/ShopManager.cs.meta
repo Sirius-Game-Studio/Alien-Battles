@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 148b2b8b975abc94db2eb99ca9433bf0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - damageButton: {instanceID: 0}
+  - speedButton: {instanceID: 0}
+  - damagePrice: {instanceID: 0}
+  - speedPrice: {instanceID: 0}
+  - damageSlider: {instanceID: 0}
+  - speedSlider: {instanceID: 0}
+  - buttonClick: {fileID: 8300000, guid: 4d1f6327c6007a84d9ed2a018e9c71ea, type: 3}
+  - purchaseItem: {fileID: 8300000, guid: 23138acd68576ab418d554e470cfca1c, type: 3}
+  - cannotAfford: {fileID: 8300000, guid: f81f37ad72072124d8d17bdf79ae37fd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

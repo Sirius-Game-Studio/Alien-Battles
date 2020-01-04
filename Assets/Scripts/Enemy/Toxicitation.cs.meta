@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0c84d2ccc1f5ef24fa97946362ffc87e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - music: {fileID: 8300000, guid: 82cc0dcb55f8d124b9d3a0a21bb40466, type: 3}
+  - spiralicGestationFireSound: {fileID: 8300000, guid: 22fbd8c98c532ee41a47008752a10671,
+      type: 3}
+  - toxicBlastFireSound: {fileID: 8300000, guid: 40df98016da499c4a86ffd198a82142d,
+      type: 3}
+  - xScissorsFireSound: {fileID: 8300000, guid: e10ab12f99d6a0b498fb4c994dad8fed,
+      type: 3}
+  - orb: {fileID: 3482664215841716809, guid: 59bfe1db1ccf35343b5f0eb38b7283a4, type: 3}
+  - doubleOrb: {fileID: 3482664215841716809, guid: 2d3ad6fb2ca55164fb5a976a1ba63550,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

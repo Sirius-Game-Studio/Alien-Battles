@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 12fc012a8d3d52c439a7722d5935c80a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameHUD: {instanceID: 0}
+  - gamePausedMenu: {instanceID: 0}
+  - gameOverMenu: {instanceID: 0}
+  - levelCompletedMenu: {instanceID: 0}
+  - settingsMenu: {instanceID: 0}
+  - quitGameMenu: {instanceID: 0}
+  - waveText: {instanceID: 0}
+  - loadingScreen: {instanceID: 0}
+  - loadingSlider: {instanceID: 0}
+  - pauseButton: {instanceID: 0}
+  - loseJingle: {fileID: 8300000, guid: 4c836f8dab11c9845b13085c31b13ac9, type: 3}
+  - winJingle: {fileID: 8300000, guid: d2ebe1c98bd416f4dbe7629b11a863c3, type: 3}
+  - buttonClick: {fileID: 8300000, guid: 4d1f6327c6007a84d9ed2a018e9c71ea, type: 3}
+  - audioMixer: {fileID: 24100000, guid: 85fed75a90cf4534196d59abe057ef35, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

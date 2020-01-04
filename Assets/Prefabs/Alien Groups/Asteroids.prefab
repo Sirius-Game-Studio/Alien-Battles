@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3204869311682395504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3204869311682395506}
+  - component: {fileID: 3204869311682395507}
+  m_Layer: 0
+  m_Name: Asteroids
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3204869311682395506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204869311682395504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3204869311682395507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204869311682395504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c4563a62ccb2c4383b5bec46e75ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidSpeed: {x: 3.5, y: 6}
+  asteroidRotSpeed: {x: -90, y: 90}
+  asteroidSpawnTime: {x: 0.25, y: 0.4}
+  asteroidAmount: 20
+  asteroids:
+  - {fileID: 957080070929690860, guid: e429e4e83c2794542b12e02b22c9aa86, type: 3}
+  - {fileID: 957080070929690860, guid: 780240d874b93ca47876338367323390, type: 3}
+  - {fileID: 957080070929690860, guid: afb7bc15c69437b49bc051a12e6272f8, type: 3}
+  - {fileID: 957080070929690860, guid: b0394ee8112b09d47be9828cfd55c234, type: 3}
+  - {fileID: 5475909852816664517, guid: e6cd8e5953dfdc240893a2148353661d, type: 3}
+  - {fileID: 5475909852816664517, guid: dbf1074294685874ba8e2bb77361d578, type: 3}
+  - {fileID: 5475909852816664517, guid: 0d7d1ba03d2cb854ebd638ac821f2d98, type: 3}
+  - {fileID: 5475909852816664517, guid: f1a1f99d5572ac64697285e278e27f9c, type: 3}
+  - {fileID: 5475909852816664517, guid: 75d066a234bab5f4a9669414e490b558, type: 3}

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ce50a78de57428c4581f2280c82e8b70
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - music: {fileID: 8300000, guid: 82cc0dcb55f8d124b9d3a0a21bb40466, type: 3}
+  - conicalRayFireSound: {fileID: 8300000, guid: e10ab12f99d6a0b498fb4c994dad8fed,
+      type: 3}
+  - plungingRocksFireSound: {fileID: 8300000, guid: 40df98016da499c4a86ffd198a82142d,
+      type: 3}
+  - hollowedBombFireSound: {fileID: 8300000, guid: 22fbd8c98c532ee41a47008752a10671,
+      type: 3}
+  - laser: {fileID: 1944350644039163148, guid: ab404aa6523a71e44aa3ed84bddb5f62, type: 3}
+  - orb: {fileID: 3482664215841716809, guid: 522d10e724c0377429709a7a117d3299, type: 3}
+  - massiveOrb: {fileID: 3482664215841716809, guid: aa0605ca95b0afd44aa1756a815cfae7,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

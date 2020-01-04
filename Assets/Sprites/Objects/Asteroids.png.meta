@@ -1,0 +1,424 @@
+fileFormatVersion: 2
+guid: 83eb9bb9ba0130e498106c419eb2ca8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5766033097715662417
+    second: aster-huge-1
+  - first:
+      213: 3577993227607710454
+    second: aster-huge-2
+  - first:
+      213: -5855003014915806325
+    second: aster-huge-3
+  - first:
+      213: 147200075954907950
+    second: aster-big-1
+  - first:
+      213: 2686463653476831965
+    second: aster-big-2
+  - first:
+      213: -1465151005206068119
+    second: aster-big-3
+  - first:
+      213: -5949255221807805938
+    second: aster-big-4
+  - first:
+      213: -39755869691097218
+    second: aster-large-1
+  - first:
+      213: -6532366514859937553
+    second: aster-large-2
+  - first:
+      213: -8948216163402802190
+    second: aster-large-3
+  - first:
+      213: 6360722591433423952
+    second: aster-large-4
+  - first:
+      213: -3293240858310902380
+    second: aster-large-5
+  - first:
+      213: -302176372649705551
+    second: aster-small-1
+  - first:
+      213: -3441887109491588236
+    second: aster-small-2
+  - first:
+      213: 7933256938379694660
+    second: aster-small-3
+  - first:
+      213: 8986780144579561279
+    second: aster-small-4
+  - first:
+      213: -5698890112251249462
+    second: aster-small-5
+  - first:
+      213: 9034506224444501946
+    second: aster-small-6
+  - first:
+      213: -5766033097715662417
+    second: AsteroidBig1
+  - first:
+      213: 3577993227607710454
+    second: AsteroidBig2
+  - first:
+      213: -5855003014915806325
+    second: AsteroidBig3
+  - first:
+      213: 147200075954907950
+    second: AsteroidBig4
+  - first:
+      213: 2686463653476831965
+    second: AsteroidLarge1
+  - first:
+      213: -1465151005206068119
+    second: AsteroidLarge2
+  - first:
+      213: -5949255221807805938
+    second: AsteroidLarge3
+  - first:
+      213: -39755869691097218
+    second: AsteroidLarge4
+  - first:
+      213: -6532366514859937553
+    second: AsteroidLarge5
+  - first:
+      213: -8948216163402802190
+    second: asteroids_9
+  - first:
+      213: 6360722591433423952
+    second: asteroids_10
+  - first:
+      213: -3293240858310902380
+    second: asteroids_11
+  - first:
+      213: -302176372649705551
+    second: asteroids_12
+  - first:
+      213: -3441887109491588236
+    second: asteroids_13
+  - first:
+      213: 7933256938379694660
+    second: asteroids_14
+  - first:
+      213: 8986780144579561279
+    second: asteroids_15
+  - first:
+      213: -5698890112251249462
+    second: asteroids_16
+  - first:
+      213: 9034506224444501946
+    second: asteroids_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AsteroidBig1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 107
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed1ee76c837f044911242c62c8b114
+      internalID: -5766033097715662417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidBig2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 66
+        width: 98
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b7ade17d143454eb460acf7c4eca63
+      internalID: 3577993227607710454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidBig3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 66
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c323f622c616194d902a7785976aaa0
+      internalID: -5855003014915806325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidBig4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 66
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dccbde6a5b73fd40bcee0f61ce42e68
+      internalID: 147200075954907950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidLarge1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f220a1801d914681bf05aeb0abccd
+      internalID: 2686463653476831965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidLarge2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6b4ff8e67bb844986ffcd89f754fa7
+      internalID: -1465151005206068119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidLarge3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2893309567de66c4fa74eb76f2d88a58
+      internalID: -5949255221807805938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidLarge4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9832a6f62580ecd4d9cc3302f11954dc
+      internalID: -39755869691097218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidLarge5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3858156eebe552d4bb21e645b9780d95
+      internalID: -6532366514859937553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

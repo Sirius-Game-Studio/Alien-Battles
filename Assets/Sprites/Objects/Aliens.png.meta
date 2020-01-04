@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 114ae9442b74e354ca7b8149739066a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2731795287329381114
+    second: enemies_0
+  - first:
+      213: 3229708652140166120
+    second: enemies_1
+  - first:
+      213: 876784968147787122
+    second: enemies_2
+  - first:
+      213: 1961183383047197949
+    second: enemies_3
+  - first:
+      213: -3351989875833439213
+    second: enemies_4
+  - first:
+      213: -3029504926045522119
+    second: enemies_5
+  - first:
+      213: -2782341204894616949
+    second: enemies_6
+  - first:
+      213: 6230911579049521198
+    second: enemies_7
+  - first:
+      213: -8108438390446734492
+    second: enemies_8
+  - first:
+      213: -3231492579343523708
+    second: enemies_9
+  - first:
+      213: -8384590935982494654
+    second: enemies_10
+  - first:
+      213: -4253028335022237997
+    second: enemies_11
+  - first:
+      213: -6812798382714016367
+    second: enemies_12
+  - first:
+      213: 7153525974244860219
+    second: enemies_13
+  - first:
+      213: 414078030284958077
+    second: enemies_14
+  - first:
+      213: -7994963395263852509
+    second: enemies_15
+  - first:
+      213: 3875910722362749109
+    second: Aliens_0
+  - first:
+      213: 5911024126716800237
+    second: Aliens_1
+  - first:
+      213: -4873808084759949570
+    second: AlienCannon
+  - first:
+      213: -7357890874432515995
+    second: CrescentAlienLargeBrown
+  - first:
+      213: -150923278383738772
+    second: CrescentAlienLargeOrange
+  - first:
+      213: -8528501380216964658
+    second: Aliens_5
+  - first:
+      213: -5274542589652612626
+    second: ShellAlien
+  - first:
+      213: -935728989446950999
+    second: TwoHeadedAlien
+  - first:
+      213: -1720746799722963459
+    second: Bio-Saucer
+  - first:
+      213: -329346170841763674
+    second: Toxicitation
+  - first:
+      213: 3339375191973182072
+    second: EarthBreaker
+  - first:
+      213: 779471692525937552
+    second: Aliens_11
+  - first:
+      213: 9217791221082257328
+    second: CrescentAlienBrown
+  - first:
+      213: -6282912010112351170
+    second: CrescentAlienOrange
+  - first:
+      213: -2512906439493300150
+    second: AlienRed
+  - first:
+      213: 3584884276970274663
+    second: AlienGreen
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aliens_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340fbbe35afceca46bca2defcfc38a34
+      internalID: 3875910722362749109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aliens_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 59
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3728210af5b7a4381db49b8e6f23cc
+      internalID: 5911024126716800237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienCannon
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 58
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aa63fede4e3f54c86967ac89a36f53
+      internalID: -4873808084759949570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrescentAlienLargeBrown
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 84
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf23c5980a5e445a2bf90b88dad4bb
+      internalID: -7357890874432515995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrescentAlienLargeOrange
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 84
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d972d561ee519c645aa7a33f0bda46f4
+      internalID: -150923278383738772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aliens_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 63
+        width: 47
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed120bd9a4fa4254f9def11457c07ae6
+      internalID: -8528501380216964658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShellAlien
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 64
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c892cb1a6d20d94084274454c231cad
+      internalID: -5274542589652612626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TwoHeadedAlien
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 64
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0737b3f1065eb1743ac9b8992519ade6
+      internalID: -935728989446950999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bio-Saucer
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 89
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7033800d6318b734b94079857d4eb66e
+      internalID: -1720746799722963459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toxicitation
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 79
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addd93ae85009d042a4dc002b9c28769
+      internalID: -329346170841763674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthBreaker
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cf181473d37434c8636b2d8f4ceeed
+      internalID: 3339375191973182072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aliens_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ccd4069c2c2f9428b88433c7b554fb
+      internalID: 779471692525937552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrescentAlienBrown
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 34
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d39d93edae2d8409d3e36c63643c4d
+      internalID: 9217791221082257328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrescentAlienOrange
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 34
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e614397d01cd4449932bb154e9827ad
+      internalID: -6282912010112351170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienRed
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71f93b127748ab41ab89787f54b9281
+      internalID: -2512906439493300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGreen
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857a8d6735810c54488514e5cbb7bef4
+      internalID: 3584884276970274663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

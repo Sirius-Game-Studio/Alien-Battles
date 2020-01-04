@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5f913103bc494384d9ebb3f6d956384f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - music: {fileID: 8300000, guid: 82cc0dcb55f8d124b9d3a0a21bb40466, type: 3}
+  - energeticWaveFireSound: {fileID: 8300000, guid: e10ab12f99d6a0b498fb4c994dad8fed,
+      type: 3}
+  - CLamperFireSound: {fileID: 8300000, guid: ec41053d0095b5c4d9537d5e0dde76d5, type: 3}
+  - seekingSphereFireSound: {fileID: 8300000, guid: 4f62ee1d72978884d9d3c1d4418d2140,
+      type: 3}
+  - wave: {fileID: 7865344371510287794, guid: 8c84e4bfe59cfd74a8bded7aad72e7fb, type: 3}
+  - homingOrb: {fileID: 3482664215841716809, guid: 645f13167b6f13d44bf270e89401297e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

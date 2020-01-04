@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 854f19d5d1a6b454f85768e988a9f785
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 1
+  wrapperCodePath: Assets/Scripts/Player/Controls.cs
+  wrapperClassName: 
+  wrapperCodeNamespace: 

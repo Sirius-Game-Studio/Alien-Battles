@@ -1,0 +1,1822 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &918515970935600467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918515970935600468}
+  - component: {fileID: 918515970935600469}
+  - component: {fileID: -4850292489944390327}
+  - component: {fileID: 918515970935600470}
+  m_Layer: 0
+  m_Name: Ellipse
+  m_TagString: EnemyGroup
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918515970935600468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918515970935600467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7535882985746855954}
+  - {fileID: 1940546388494642104}
+  - {fileID: 1361051835912536895}
+  - {fileID: 699493962449436437}
+  - {fileID: 6901038670261091876}
+  - {fileID: 951126802749766003}
+  - {fileID: 1088448875985605697}
+  - {fileID: 8081023072780029745}
+  - {fileID: 6163435521224807792}
+  - {fileID: 1905652297503895516}
+  - {fileID: 6168298407340724598}
+  - {fileID: 3477589474234123678}
+  - {fileID: 5490733801355666951}
+  - {fileID: 5398972623928017578}
+  - {fileID: 3075827896458376110}
+  - {fileID: 8432357701530855382}
+  - {fileID: 2865479914072717851}
+  - {fileID: 3158280721260815025}
+  - {fileID: 1096257704950383588}
+  - {fileID: 2827621893796091072}
+  - {fileID: 5992429030776267358}
+  - {fileID: 2419527202274689765}
+  - {fileID: 5274225566454790049}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918515970935600469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918515970935600467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7f6354e73f2fe42b10e63b5d4b63dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  initialY: 14
+--- !u!114 &-4850292489944390327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918515970935600467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acf82070ff08644e9716e4ecd0ce8ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: {x: 0.25, y: 4}
+--- !u!114 &918515970935600470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918515970935600467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da058207f08ae3249b6a9972e0000274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &180590200367426138
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &1096257704950383588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 180590200367426138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &607048740516404541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &951126802749766003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 607048740516404541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &740082553148354575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &1088448875985605697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 740082553148354575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &930738074000857947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &699493962449436437 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 930738074000857947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1710473106484717425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &1361051835912536895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 1710473106484717425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2246596917544143762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &1905652297503895516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 2246596917544143762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2283760408990273526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &1940546388494642104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 2283760408990273526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2766145660997356303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &3158280721260815025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2766145660997356303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2817191144589892112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &3075827896458376110 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2817191144589892112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3058823255358526373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &2865479914072717851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3058823255358526373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3065436657602674046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &2827621893796091072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3065436657602674046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3180885405280054107
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &2419527202274689765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3180885405280054107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3827319054604460496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &3477589474234123678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 3827319054604460496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4720937936923889593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &5490733801355666951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 4720937936923889593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4937903915507736095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_Name
+      value: Shell Alien
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95733953cd755749909841946518f11, type: 3}
+--- !u!4 &5274225566454790049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: e95733953cd755749909841946518f11,
+    type: 3}
+  m_PrefabInstance: {fileID: 4937903915507736095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5141463398986459924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &5398972623928017578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5141463398986459924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5820214143494550840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &6168298407340724598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 5820214143494550840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5825217718511841598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &6163435521224807792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 5825217718511841598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6528765141611305578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &6901038670261091876 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 6528765141611305578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6817965173779925984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &5992429030776267358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6817965173779925984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7911534763520646236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &7535882985746855954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 7911534763520646236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8465132318139263871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 387238466206082125, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Crescent Alien (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94f32c6fe7a0ee4d9c9293854303157, type: 3}
+--- !u!4 &8081023072780029745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 387238466206082126, guid: d94f32c6fe7a0ee4d9c9293854303157,
+    type: 3}
+  m_PrefabInstance: {fileID: 8465132318139263871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8697266583624339048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 918515970935600468}
+    m_Modifications:
+    - target: {fileID: 988299632705235391, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_Name
+      value: Orange Crescent Alien (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cef52270cb2c1c24285bef6c0178401d, type: 3}
+--- !u!4 &8432357701530855382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 988299632705235390, guid: cef52270cb2c1c24285bef6c0178401d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8697266583624339048}
+  m_PrefabAsset: {fileID: 0}
