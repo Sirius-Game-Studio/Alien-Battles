@@ -9,8 +9,8 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     
     [Header("Settings")]
-    [SerializeField] private long maxWaves = 3;
     [Tooltip("Amount of money earned after completing this level.")] [SerializeField] private long moneyReward = 40;
+    [SerializeField] private Gamemodes gamemode = Gamemodes.Campaign;
 
     [Header("UI")]
     [SerializeField] private Canvas gameHUD = null;
@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer = null;
 
     private AudioSource audioSource;
+    private enum Gamemodes {Campaign, Endless};
     private enum ClickSources {GamePaused, GameOver, LevelCompleted};
     [HideInInspector] public bool gameOver = false;
     [HideInInspector] public bool won = false;
@@ -182,7 +183,7 @@ public class GameController : MonoBehaviour
             if (Camera.main.GetComponent<AudioSource>()) Camera.main.GetComponent<AudioSource>().Stop();
             pauseButton.gameObject.SetActive(false);
         }
-        if (!gameOver && won)
+        if (gamemode == Gamemodes.Campaign && !gameOver && won)
         {
             clickSource = ClickSources.LevelCompleted;
             if (!loading && !quitGameMenu.enabled) levelCompletedMenu.enabled = true;
@@ -216,7 +217,13 @@ public class GameController : MonoBehaviour
             if (Camera.main.GetComponent<AudioSource>()) Camera.main.GetComponent<AudioSource>().Stop();
             pauseButton.gameObject.SetActive(false);
         }
-        waveText.text = "WAVE " + wave + "/" + maxWaves;
+        if (gamemode == Gamemodes.Campaign)
+        {
+            waveText.text = "WAVE " + wave + "/" + enemyGroups.LongLength;
+        } else if (gamemode == Gamemodes.Endless)
+        {
+            waveText.text = "WAVE " + wave;
+        }
         if (!currentBoss)
         {
             currentBoss = null;
@@ -238,12 +245,24 @@ public class GameController : MonoBehaviour
         {
             loadingScreen.SetActive(true);
         }
-        if (wave < 1)
+        if (gamemode == Gamemodes.Campaign)
         {
-            wave = 1;
-        } else if (wave > maxWaves)
+            if (wave < 1)
+            {
+                wave = 1;
+            } else if (wave > enemyGroups.LongLength)
+            {
+                wave = enemyGroups.LongLength;
+            }
+        } else if (gamemode == Gamemodes.Endless)
         {
-            wave = maxWaves;
+            if (wave < 1)
+            {
+                wave = 1;
+            } else if (wave > 9223372036854775806)
+            {
+                wave = 9223372036854775806;
+            }
         }
         if (long.Parse(PlayerPrefs.GetString("Money")) > 99999999)
         {
@@ -267,14 +286,52 @@ public class GameController : MonoBehaviour
                 yield return null;
             } else
             {
-                if (wave < maxWaves)
+                if (gamemode == Gamemodes.Campaign)
+                {
+                    if (wave < enemyGroups.LongLength)
+                    {
+                        yield return new WaitForSeconds(2);
+                        ++wave;
+                        waveText.enabled = true;
+                        waveText.text = "WAVE " + wave + "/" + enemyGroups.LongLength;
+                        yield return new WaitForSeconds(1);
+                        GameObject enemyGroup = enemyGroups[wave - 1];
+                        if (enemyGroup.layer != 8)
+                        {
+                            if (enemyGroup.GetComponent<EnemyMover>())
+                            {
+                                Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<EnemyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                            } else if (enemyGroup.GetComponent<AsteroidSpawner>())
+                            {
+                                Instantiate(enemyGroup, new Vector3(0, 13, 0), Quaternion.Euler(0, 0, 0));
+                            }
+                        } else
+                        {
+                            currentBoss = Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<HorizontalOnlyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                            currentBoss.name = enemyGroup.name;
+                        }
+                        waveText.enabled = false;
+                    } else
+                    {
+                        PlayerController playerController = FindObjectOfType<PlayerController>();
+                        if (playerController)
+                        {
+                            playerController.startWinAnimation();
+                            yield return null;
+                        } else
+                        {
+                            won = true;
+                            yield break;
+                        }
+                    }
+                } else if (gamemode == Gamemodes.Endless)
                 {
                     yield return new WaitForSeconds(2);
                     ++wave;
                     waveText.enabled = true;
-                    waveText.text = "WAVE " + wave + "/" + maxWaves;
+                    waveText.text = "WAVE " + wave;
                     yield return new WaitForSeconds(1);
-                    GameObject enemyGroup = enemyGroups[wave - 1];
+                    GameObject enemyGroup = enemyGroups[Random.Range(0, enemyGroups.Length)];
                     if (enemyGroup.layer != 8)
                     {
                         if (enemyGroup.GetComponent<EnemyMover>())
@@ -290,18 +347,6 @@ public class GameController : MonoBehaviour
                         currentBoss.name = enemyGroup.name;
                     }
                     waveText.enabled = false;
-                } else
-                {
-                    PlayerController playerController = FindObjectOfType<PlayerController>();
-                    if (playerController)
-                    {
-                        playerController.startWinAnimation();
-                        yield return null;
-                    } else
-                    {
-                        won = true;
-                        yield break;
-                    }
                 }
             }
         }
@@ -309,28 +354,55 @@ public class GameController : MonoBehaviour
 
     IEnumerator firstWaveSpawn()
     {
-        yield return new WaitForSeconds(2);
-        wave = 1;
-        waveText.enabled = true;
-        waveText.text = "WAVE " + wave + "/" + maxWaves;
-        yield return new WaitForSeconds(1);
-        GameObject enemyGroup = enemyGroups[0];
-        if (enemyGroup.layer != 8)
+        if (gamemode == Gamemodes.Campaign)
         {
-            if (enemyGroup.GetComponent<EnemyMover>())
+            yield return new WaitForSeconds(2);
+            wave = 1;
+            waveText.enabled = true;
+            waveText.text = "WAVE " + wave + "/" + enemyGroups.LongLength;
+            yield return new WaitForSeconds(1);
+            GameObject enemyGroup = enemyGroups[0];
+            if (enemyGroup.layer != 8)
             {
-                Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<EnemyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
-            } else if (enemyGroup.GetComponent<AsteroidSpawner>())
+                if (enemyGroup.GetComponent<EnemyMover>())
+                {
+                    Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<EnemyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                } else if (enemyGroup.GetComponent<AsteroidSpawner>())
+                {
+                    Instantiate(enemyGroup, new Vector3(0, 13, 0), Quaternion.Euler(0, 0, 0));
+                }
+            } else
             {
-                Instantiate(enemyGroup, new Vector3(0, 13, 0), Quaternion.Euler(0, 0, 0));
+                currentBoss = Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<HorizontalOnlyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                currentBoss.name = enemyGroup.name;
             }
-        } else
+            StartCoroutine(spawnWaves());
+            waveText.enabled = false;
+        } else if (gamemode == Gamemodes.Endless)
         {
-            currentBoss = Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<HorizontalOnlyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
-            currentBoss.name = enemyGroup.name;
+            yield return new WaitForSeconds(2);
+            wave = 1;
+            waveText.enabled = true;
+            waveText.text = "WAVE " + wave;
+            yield return new WaitForSeconds(1);
+            GameObject enemyGroup = enemyGroups[Random.Range(0, enemyGroups.Length)];
+            if (enemyGroup.layer != 8)
+            {
+                if (enemyGroup.GetComponent<EnemyMover>())
+                {
+                    Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<EnemyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                } else if (enemyGroup.GetComponent<AsteroidSpawner>())
+                {
+                    Instantiate(enemyGroup, new Vector3(0, 13, 0), Quaternion.Euler(0, 0, 0));
+                }
+            } else
+            {
+                currentBoss = Instantiate(enemyGroup, new Vector3(0, enemyGroup.GetComponent<HorizontalOnlyMover>().initialY, 0), Quaternion.Euler(0, 0, 0));
+                currentBoss.name = enemyGroup.name;
+            }
+            StartCoroutine(spawnWaves());
+            waveText.enabled = false;
         }
-        StartCoroutine(spawnWaves());
-        waveText.enabled = false;
     }
 
     IEnumerator loadScene(string scene)
@@ -413,7 +485,7 @@ public class GameController : MonoBehaviour
 
     public void toNextLevel()
     {
-        if (won && levelCompletedMenu.enabled)
+        if (gamemode == Gamemodes.Campaign && won && levelCompletedMenu.enabled)
         {
             if (audioSource)
             {
