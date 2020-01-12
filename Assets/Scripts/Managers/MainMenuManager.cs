@@ -13,6 +13,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Canvas mainMenu = null;
     [SerializeField] private Canvas shopMenu = null;
     [SerializeField] private Canvas settingsMenu = null;
+    [SerializeField] private Canvas gamemodesMenu = null;
     [SerializeField] private Canvas levelSelectMenu = null;
     [SerializeField] private Canvas perksMenu = null;
     [SerializeField] private Canvas upgradesMenu = null;
@@ -55,6 +56,7 @@ public class MainMenuManager : MonoBehaviour
         mainMenu.enabled = true;
         shopMenu.enabled = false;
         settingsMenu.enabled = false;
+        gamemodesMenu.enabled = false;
         levelSelectMenu.enabled = false;
         perksMenu.enabled = false;
         upgradesMenu.enabled = false;
@@ -72,6 +74,10 @@ public class MainMenuManager : MonoBehaviour
             } else if (settingsMenu.enabled)
             {
                 settingsMenu.enabled = false;
+                mainMenu.enabled = true;
+            } else if (gamemodesMenu.enabled)
+            {
+                gamemodesMenu.enabled = false;
                 mainMenu.enabled = true;
             } else if (levelSelectMenu.enabled)
             {
@@ -143,6 +149,7 @@ public class MainMenuManager : MonoBehaviour
                 mainMenu.enabled = false;
                 shopMenu.enabled = false;
                 settingsMenu.enabled = false;
+                gamemodesMenu.enabled = false;
                 levelSelectMenu.enabled = false;
                 perksMenu.enabled = false;
                 upgradesMenu.enabled = false;
@@ -223,6 +230,31 @@ public class MainMenuManager : MonoBehaviour
             shopMenu.enabled = true;
             lastCanvas = shopMenu;
             ShopManager.instance.open = false;
+        }
+    }
+
+    public void openCanvasFromGamemodes(Canvas canvas)
+    {
+        if (audioSource)
+        {
+            if (buttonClick)
+            {
+                audioSource.PlayOneShot(buttonClick);
+            } else
+            {
+                audioSource.Play();
+            }
+        }
+        if (!canvas.enabled)
+        {
+            canvas.enabled = true;
+            gamemodesMenu.enabled = false;
+            lastCanvas = canvas;
+        } else
+        {
+            canvas.enabled = false;
+            gamemodesMenu.enabled = true;
+            lastCanvas = gamemodesMenu;
         }
     }
 
