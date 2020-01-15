@@ -121,6 +121,20 @@ public class MainMenuManager : MonoBehaviour
     }
 
     #region Main Functions
+    void playButtonClick()
+    {
+        if (audioSource)
+        {
+            if (buttonClick)
+            {
+                audioSource.PlayOneShot(buttonClick);
+            } else
+            {
+                audioSource.Play();
+            }
+        }
+    }
+
     public void grantMoney(int amount)
     {
         if (PlayerPrefs.GetString("Money") != "")
@@ -163,16 +177,7 @@ public class MainMenuManager : MonoBehaviour
     #region Menu Functions
     public void startLevel(int level)
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         if (PlayerPrefs.GetInt("Level") >= level)
         {
             PlayerPrefs.SetInt("IngameLevel", level);
@@ -181,18 +186,15 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    public void startEndless()
+    {
+        playButtonClick();
+        StartCoroutine(loadScene("Endless"));
+    }
+
     public void openCanvasFromMainMenu(Canvas canvas)
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         if (!canvas.enabled)
         {
             canvas.enabled = true;
@@ -208,16 +210,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void openCanvasFromShop(Canvas canvas)
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         if (!canvas.enabled)
         {
             canvas.enabled = true;
@@ -235,16 +228,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void openCanvasFromGamemodes(Canvas canvas)
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         if (!canvas.enabled)
         {
             canvas.enabled = true;
@@ -260,16 +244,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void openIAPShop()
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         if (!IAPShopMenu.enabled)
         {
             IAPShopMenu.enabled = true;
@@ -283,16 +258,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void quitGame()
     {
-        if (audioSource)
-        {
-            if (buttonClick)
-            {
-                audioSource.PlayOneShot(buttonClick);
-            } else
-            {
-                audioSource.Play();
-            }
-        }
+        playButtonClick();
         Application.Quit();
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
