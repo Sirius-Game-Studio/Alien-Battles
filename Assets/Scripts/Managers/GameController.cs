@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     
     [Header("Settings")]
     [Tooltip("Amount of money earned after completing this level.")] [SerializeField] private long moneyReward = 40;
-    [SerializeField] private Gamemodes gamemode = Gamemodes.Campaign;
+    public Gamemodes gamemode = Gamemodes.Campaign;
 
     [Header("UI")]
     [SerializeField] private Canvas gameHUD = null;
@@ -39,14 +39,15 @@ public class GameController : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer = null;
 
     private AudioSource audioSource;
-    private enum Gamemodes {Campaign, Endless};
+    public enum Gamemodes {Campaign, Endless};
     private enum ClickSources {GamePaused, GameOver, LevelCompleted};
     [HideInInspector] public bool gameOver = false;
     [HideInInspector] public bool won = false;
     [HideInInspector] public bool paused = false;
-    private long wave = 1;
+    [HideInInspector] public long wave = 1;
     [HideInInspector] public GameObject currentBoss;
     private long bossMaxHealth = 0;
+    private long moneyRewardGoal = 6;
     private bool completed = false;
     private bool playedLoseSound = false, playedWinSound = false;
     private ClickSources clickSource = ClickSources.GamePaused;
@@ -70,6 +71,7 @@ public class GameController : MonoBehaviour
         won = false;
         paused = false;
         currentBoss = null;
+        if (gamemode == Gamemodes.Endless) moneyRewardGoal = wave + 6;
         loading = false;
         Time.timeScale = 1;
         AudioListener.pause = false;
@@ -326,6 +328,21 @@ public class GameController : MonoBehaviour
                     }
                 } else if (gamemode == Gamemodes.Endless)
                 {
+                    if (wave >= moneyRewardGoal)
+                    {
+                        moneyRewardGoal = wave + 6;
+                        long money = long.Parse(PlayerPrefs.GetString("Money"));
+                        money += moneyReward;
+                        PlayerPrefs.SetString("Money", money.ToString());
+                        PlayerPrefs.Save();
+                        if (GameController.instance.wave < 15)
+                        {
+                            moneyReward += 20;
+                        } else
+                        {
+                            moneyReward += 25;
+                        }
+                    }
                     yield return new WaitForSeconds(2);
                     ++wave;
                     waveText.enabled = true;
@@ -354,10 +371,10 @@ public class GameController : MonoBehaviour
 
     IEnumerator firstWaveSpawn()
     {
+        wave = 1;
         if (gamemode == Gamemodes.Campaign)
         {
             yield return new WaitForSeconds(2);
-            wave = 1;
             waveText.enabled = true;
             waveText.text = "WAVE " + wave + "/" + enemyGroups.LongLength;
             yield return new WaitForSeconds(1);
@@ -381,7 +398,6 @@ public class GameController : MonoBehaviour
         } else if (gamemode == Gamemodes.Endless)
         {
             yield return new WaitForSeconds(2);
-            wave = 1;
             waveText.enabled = true;
             waveText.text = "WAVE " + wave;
             yield return new WaitForSeconds(1);
