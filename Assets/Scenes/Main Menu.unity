@@ -3254,7 +3254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: -30% Damage | +60% Projectile Speed
+  m_Text: -30% Damage | +50% Projectile Speed
 --- !u!222 &429555070
 CanvasRenderer:
   m_ObjectHideFlags: 0
