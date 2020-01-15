@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Range(5, 50)] [SerializeField] private long damage = 10;
     [Range(200, 400)] [SerializeField] private float RPM = 300;
     [SerializeField] private float speed = 15;
+    [SerializeField] private float projectileSpeed = 10;
     [Range(1, 10)] [SerializeField] private int maxWeaponPower = 5;
 
     [Header("Sound Effects")]
@@ -39,8 +40,12 @@ public class PlayerController : MonoBehaviour
             speed *= 0.85f;
         } else if (PlayerPrefs.GetString("Perk") == "TurboThrusters")
         {
-            damage = (long)(damage * 0.8);
+            damage = (long)(damage * 0.2);
             speed *= 1.25f;
+        } else if (PlayerPrefs.GetString("Perk") == "TachyonShots")
+        {
+            damage = (long)(damage * 0.3);
+            projectileSpeed *= 1.6f;
         }
         if (PlayerPrefs.HasKey("DamageMultiplier")) damage = (long)(damage * PlayerPrefs.GetFloat("DamageMultiplier"));
         if (PlayerPrefs.HasKey("SpeedMultiplier")) speed *= PlayerPrefs.GetFloat("SpeedMultiplier");
@@ -125,6 +130,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject newBullet = Instantiate(bullet, new Vector3(bulletSpawn.position.x, bulletSpawn.position.y, 0), bulletSpawn.rotation);
                 newBullet.GetComponent<Bullet>().damage = damage;
+                newBullet.GetComponent<Mover>().speed = projectileSpeed;
                 foundBulletSpawns = true;
             }
         }
