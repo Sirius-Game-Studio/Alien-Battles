@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
                 if (multiplier > 5) multiplier = 5;
                 health = (long)(health * multiplier);
             }
-            powerupChance = 0.05f;
+            powerupChance *= 0.75f;
             coinChance = 0;
         }
         maxHealth = health;
