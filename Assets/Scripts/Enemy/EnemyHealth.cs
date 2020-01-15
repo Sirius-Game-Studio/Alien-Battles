@@ -20,9 +20,20 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
-        if (gameObject.layer != 8 && PlayerPrefs.GetInt("IngameLevel") > 1)
+        if (GameController.instance.gamemode == GameController.Gamemodes.Campaign)
         {
-            for (int i = 0; i < PlayerPrefs.GetInt("IngameLevel") - 1; i++) health += 2;
+            if (PlayerPrefs.GetInt("IngameLevel") > 1 && gameObject.layer != 8) for (int i = 0; i < PlayerPrefs.GetInt("IngameLevel") - 1; i++) health += 2;
+        } else if (GameController.instance.gamemode == GameController.Gamemodes.Endless)
+        {
+            if (GameController.instance.wave > 1)
+            {
+                float multiplier = 1;
+                for (long i = 0; i < GameController.instance.wave - 1; i++) multiplier += 0.2f;
+                if (multiplier > 5) multiplier = 5;
+                health = (long)(health * multiplier);
+            }
+            powerupChance = 0.05f;
+            coinChance = 0;
         }
         maxHealth = health;
         mh = maxHealth;
