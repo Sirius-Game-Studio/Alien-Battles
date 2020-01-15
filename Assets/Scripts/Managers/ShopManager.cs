@@ -40,6 +40,9 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private GameObject TTBuyText = null;
     [SerializeField] private Text TTUseText = null;
     [SerializeField] private Text TTPriceText = null;
+    [SerializeField] private GameObject TSBuyText = null;
+    [SerializeField] private Text TSUseText = null;
+    [SerializeField] private Text TSPriceText = null;
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip buttonClick = null;
@@ -60,10 +63,6 @@ public class ShopManager : MonoBehaviour
         }
         audioSource = GetComponent<AudioSource>();
         open = false;
-        for (int i = 0; i < perks.Length; i++)
-        {
-            if (!PlayerPrefs.HasKey(perks[i].key + "Price")) PlayerPrefs.SetInt(perks[i].key + "Price", perks[i].price);
-        }
         for (int i = 0; i < upgrades.Length; i++)
         {
             if (!PlayerPrefs.HasKey(upgrades[i].name + "Multiplier")) PlayerPrefs.SetFloat(upgrades[i].name + "Multiplier", 1);
@@ -75,8 +74,9 @@ public class ShopManager : MonoBehaviour
     void Update()
     {
         //Sets perk text states
-        perkState(SLBuyText, SLUseText, SLPriceText, perks[0].key, perks[0].key + "Price");
-        perkState(TTBuyText, TTUseText, TTPriceText, perks[1].key, perks[1].key + "Price");
+        perkState(SLBuyText, SLUseText, SLPriceText, perks[0].key, perks[0].price);
+        perkState(TTBuyText, TTUseText, TTPriceText, perks[1].key, perks[1].price);
+        perkState(TSBuyText, TSUseText, TSPriceText, perks[2].key, perks[2].price);
 
         //Sets upgrade text states
         upgradeState(damageButton, damagePrice, damageSlider, upgrades[0].name + "Level", upgrades[0].name + "Price", upgrades[0].maxLevel);
@@ -84,7 +84,7 @@ public class ShopManager : MonoBehaviour
     }
 
     #region Main Functions
-    void perkState(GameObject buyText, Text useText, Text priceText, string perkKey, string priceKey)
+    void perkState(GameObject buyText, Text useText, Text priceText, string perkKey, int price)
     {
         if (perkKey != "")
         {
@@ -104,7 +104,7 @@ public class ShopManager : MonoBehaviour
                     useText.text = "Use";
                 }
             }
-            priceText.text = "$" + PlayerPrefs.GetInt(priceKey);
+            priceText.text = "$" + price;
         }
     }
 
