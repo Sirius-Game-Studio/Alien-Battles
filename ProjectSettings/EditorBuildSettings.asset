@@ -56,6 +56,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 15.unity
     guid: 2fcec52e981c73743a78bec57345175a
+  - enabled: 1
+    path: Assets/Scenes/Endless.unity
+    guid: 5542c511f9c9b6f49b0bc52fd44641d8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8f54e563edfea0447a79dcaa2cd52b33,
       type: 2}
