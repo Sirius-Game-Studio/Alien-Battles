@@ -248,7 +248,13 @@ public class MainMenuManager : MonoBehaviour
         if (!IAPShopMenu.enabled)
         {
             IAPShopMenu.enabled = true;
-            lastCanvas.enabled = false;
+            mainMenu.enabled = false;
+            shopMenu.enabled = false;
+            settingsMenu.enabled = false;
+            gamemodesMenu.enabled = false;
+            levelSelectMenu.enabled = false;
+            perksMenu.enabled = false;
+            upgradesMenu.enabled = false;
         } else
         {
             IAPShopMenu.enabled = false;
