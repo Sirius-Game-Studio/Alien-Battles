@@ -40,12 +40,12 @@ public class PlayerController : MonoBehaviour
             speed *= 0.85f;
         } else if (PlayerPrefs.GetString("Perk") == "TurboThrusters")
         {
-            damage = (long)(damage * 0.2);
+            damage = (long)(damage * 0.8);
             speed *= 1.25f;
         } else if (PlayerPrefs.GetString("Perk") == "TachyonShots")
         {
-            damage = (long)(damage * 0.3);
-            projectileSpeed *= 1.6f;
+            damage = (long)(damage * 0.7);
+            projectileSpeed *= 1.5f;
         }
         if (PlayerPrefs.HasKey("DamageMultiplier")) damage = (long)(damage * PlayerPrefs.GetFloat("DamageMultiplier"));
         if (PlayerPrefs.HasKey("SpeedMultiplier")) speed *= PlayerPrefs.GetFloat("SpeedMultiplier");
