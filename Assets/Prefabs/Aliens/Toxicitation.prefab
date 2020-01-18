@@ -358,6 +358,7 @@ MonoBehaviour:
   coinChance: 0
   powerups:
   - {fileID: 1778485485033232479, guid: 24ea5af5d6fd635429891eb942b315e8, type: 3}
+  - {fileID: 1778485485033232479, guid: 4801d45ed497e454792d5ee7b5a3e22c, type: 3}
   coin: {fileID: 1852764995918633276, guid: c0b7e7c5e82c3bf4eb3c5f67901e23c0, type: 3}
   explosion: {fileID: 1857683861984150300, guid: c0cf3423acca1bd4daf2595cbbae4c9b,
     type: 3}
@@ -381,9 +382,12 @@ MonoBehaviour:
   spiralicGestationFireRate: 0.08
   toxicBlastFireRate: 1.5
   toxicBlastShots: 2
+  xScissorsFireRate: 0.09
+  xScissorsShots: 40
   spiralicGestationFireSound: {fileID: 8300000, guid: 22fbd8c98c532ee41a47008752a10671,
     type: 3}
   toxicBlastFireSound: {fileID: 8300000, guid: 40df98016da499c4a86ffd198a82142d, type: 3}
+  xScissorsFireSound: {fileID: 0}
   orb: {fileID: 3482664215841716809, guid: 59bfe1db1ccf35343b5f0eb38b7283a4, type: 3}
   doubleOrb: {fileID: 3482664215841716809, guid: 2d3ad6fb2ca55164fb5a976a1ba63550,
     type: 3}

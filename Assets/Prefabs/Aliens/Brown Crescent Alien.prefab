@@ -250,6 +250,7 @@ MonoBehaviour:
   coinChance: 0.35
   powerups:
   - {fileID: 1778485485033232479, guid: 24ea5af5d6fd635429891eb942b315e8, type: 3}
+  - {fileID: 1778485485033232479, guid: 4801d45ed497e454792d5ee7b5a3e22c, type: 3}
   coin: {fileID: 1852764995918633276, guid: c0b7e7c5e82c3bf4eb3c5f67901e23c0, type: 3}
   explosion: {fileID: 1857683861984150300, guid: 4ceb9e8ab413a8e48a73fa295867bcd1,
     type: 3}
