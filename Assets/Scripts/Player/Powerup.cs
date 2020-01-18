@@ -34,6 +34,10 @@ public class Powerup : MonoBehaviour
                             }
                         }
                     }
+                } else if (CompareTag("Supercharge"))
+                {
+                    playerController.supercharge();
+                    if (sound) Instantiate(sound, transform.position, transform.rotation);
                 } else
                 {
                     Debug.LogError("Powerup tag " + tag + " is invalid.");

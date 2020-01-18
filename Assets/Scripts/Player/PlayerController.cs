@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public int weaponPower = 1;
     [HideInInspector] public long lives = 3;
     [HideInInspector] public bool invulnerable = false;
+    private bool hasSupercharge = false;
     private float nextShot = 0;
     [HideInInspector] public bool animatingWinPose = false;
 
@@ -79,34 +80,43 @@ public class PlayerController : MonoBehaviour
         {
             if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.gameObject.SetActive(false);
         }
-        if (weaponPower <= 1)
+        if (!hasSupercharge)
         {
-            foreach (GameObject bulletSpawn in weaponPower1Guns)
+            if (weaponPower <= 1)
             {
-                if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
-            }
-        } else if (weaponPower == 2)
-        {
-            foreach (GameObject bulletSpawn in weaponPower2Guns)
+                foreach (GameObject bulletSpawn in weaponPower1Guns)
+                {
+                    if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                }
+            } else if (weaponPower == 2)
             {
-                if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
-            }
-        } else if (weaponPower == 3)
-        {
-            foreach (GameObject bulletSpawn in weaponPower3Guns)
+                foreach (GameObject bulletSpawn in weaponPower2Guns)
+                {
+                    if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                }
+            } else if (weaponPower == 3)
             {
-                if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
-            }
-        } else if (weaponPower == 4)
-        {
-            foreach (GameObject bulletSpawn in weaponPower4Guns)
+                foreach (GameObject bulletSpawn in weaponPower3Guns)
+                {
+                    if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                }
+            } else if (weaponPower == 4)
             {
-                if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                foreach (GameObject bulletSpawn in weaponPower4Guns)
+                {
+                    if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                }
+            } else if (weaponPower >= maxWeaponPower)
+            {
+                foreach (GameObject bulletSpawn in weaponPower5Guns)
+                {
+                    if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
+                }
             }
-        } else if (weaponPower >= maxWeaponPower)
+        } else
         {
             foreach (GameObject bulletSpawn in weaponPower5Guns)
-            {
+                {
                 if (bulletSpawn.CompareTag("BulletSpawn")) bulletSpawn.SetActive(true);
             }
         }
@@ -188,6 +198,30 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         Destroy(gameObject);
+    }
+    #endregion
+
+    #region Powerup Functions
+    public void supercharge()
+    {
+        CancelInvoke("stopSupercharge");
+        if (!hasSupercharge)
+        {
+            hasSupercharge = true;
+            damage += 2;
+            Invoke("stopSupercharge", 10);
+            print(damage);
+        } else
+        {
+            Invoke("stopSupercharge", 10);
+        }
+    }
+
+    void stopSupercharge()
+    {
+        hasSupercharge = false;
+        damage -= 2;
+        print(damage);
     }
     #endregion
 }
