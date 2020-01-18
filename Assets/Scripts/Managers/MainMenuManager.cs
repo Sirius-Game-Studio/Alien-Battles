@@ -119,6 +119,11 @@ public class MainMenuManager : MonoBehaviour
             PlayerPrefs.SetString("Money", "99999999");
             PlayerPrefs.Save();
         }
+        if (long.Parse(PlayerPrefs.GetString("HighScore")) < 0)
+        {
+            PlayerPrefs.SetString("HighScore", "0");
+            PlayerPrefs.Save();
+        }
     }
 
     void OnApplicationQuit()
