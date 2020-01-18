@@ -15,6 +15,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Canvas settingsMenu = null;
     [SerializeField] private Canvas gamemodesMenu = null;
     [SerializeField] private Canvas levelSelectMenu = null;
+    [SerializeField] private Canvas endlessMenu = null;
     [SerializeField] private Canvas perksMenu = null;
     [SerializeField] private Canvas upgradesMenu = null;
     [SerializeField] private Canvas IAPShopMenu = null;
@@ -58,6 +59,7 @@ public class MainMenuManager : MonoBehaviour
         settingsMenu.enabled = false;
         gamemodesMenu.enabled = false;
         levelSelectMenu.enabled = false;
+        endlessMenu.enabled = false;
         perksMenu.enabled = false;
         upgradesMenu.enabled = false;
         IAPShopMenu.enabled = false;
@@ -83,10 +85,14 @@ public class MainMenuManager : MonoBehaviour
             {
                 levelSelectMenu.enabled = false;
                 mainMenu.enabled = true;
+            } else if (endlessMenu.enabled)
+            {
+                endlessMenu.enabled = false;
+                mainMenu.enabled = true;
             } else if (shopMenu.enabled)
             {
                 shopMenu.enabled = false;
-                mainMenu.enabled = false;
+                mainMenu.enabled = true;
             } else if (perksMenu.enabled)
             {
                 perksMenu.enabled = false;
@@ -165,6 +171,7 @@ public class MainMenuManager : MonoBehaviour
                 settingsMenu.enabled = false;
                 gamemodesMenu.enabled = false;
                 levelSelectMenu.enabled = false;
+                endlessMenu.enabled = false;
                 perksMenu.enabled = false;
                 upgradesMenu.enabled = false;
                 IAPShopMenu.enabled = false;
