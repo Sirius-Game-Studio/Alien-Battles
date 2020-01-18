@@ -12,6 +12,7 @@ TagManager:
   - BulletSpawn
   - WeaponPower
   - EnemyGroup
+  - Supercharge
   layers:
   - Default
   - TransparentFX
