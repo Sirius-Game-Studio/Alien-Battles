@@ -19,6 +19,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Canvas perksMenu = null;
     [SerializeField] private Canvas upgradesMenu = null;
     [SerializeField] private Canvas IAPShopMenu = null;
+    [SerializeField] private Text highScoreText = null;
     [SerializeField] private GameObject loadingScreen = null;
     [SerializeField] private AudioMixer audioMixer = null;
     
@@ -107,6 +108,7 @@ public class MainMenuManager : MonoBehaviour
                 lastCanvas.enabled = true;
             }
         }
+        highScoreText.text = "High Score: " + PlayerPrefs.GetString("HighScore");
         if (!loading)
         {
             loadingScreen.SetActive(false);
