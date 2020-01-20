@@ -323,6 +323,7 @@ MonoBehaviour:
   defense: 0.5
   powerupChance: 0
   coinChance: 0
+  score: 250
   powerups:
   - {fileID: 1778485485033232479, guid: 24ea5af5d6fd635429891eb942b315e8, type: 3}
   - {fileID: 1778485485033232479, guid: 4801d45ed497e454792d5ee7b5a3e22c, type: 3}

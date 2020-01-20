@@ -6,7 +6,8 @@ public class EnemyHealth : MonoBehaviour
     public long health = 20;
     [Tooltip("Values below 1 reduce damage and values above 1 increase damage.")] public float defense = 1;
     [Tooltip("Powerup drop chance.")] [Range(0, 1)] [SerializeField] private float powerupChance = 0.07f;
-    [Tooltip("Coin drop chance.")] [Range(0, 1)] [SerializeField] private float coinChance = 0.35f;
+    [Tooltip("Coin drop chance (Campaign only).")] [Range(0, 1)] [SerializeField] private float coinChance = 0.35f;
+    [Tooltip("Amount of score given on death (Endless only).")] [SerializeField] private long score = 5;
 
     [Header("Setup")]
     [SerializeField] private GameObject[] powerups = new GameObject[0];
@@ -52,11 +53,12 @@ public class EnemyHealth : MonoBehaviour
                 Instantiate(powerups[Random.Range(0, powerups.Length)], transform.position, Quaternion.Euler(0, 0, 0));
                 dropped = true;
             }
-            if (coin && Random.value <= coinChance && !dropped)
+            if (GameController.instance.gamemode == GameController.Gamemodes.Campaign && coin && Random.value <= coinChance && !dropped)
             {
                 Instantiate(coin, transform.position, Quaternion.Euler(0, 0, 0));
                 dropped = true;
             }
+            if (GameController.instance.gamemode == GameController.Gamemodes.Endless) GameController.instance.score += score;
             if (explosion) Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, 0));
             Destroy(gameObject);
         }
