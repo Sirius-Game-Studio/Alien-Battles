@@ -108,7 +108,13 @@ public class MainMenuManager : MonoBehaviour
                 lastCanvas.enabled = true;
             }
         }
-        highScoreText.text = "High Score: " + PlayerPrefs.GetString("HighScore");
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            highScoreText.text = "High Score: " + PlayerPrefs.GetString("HighScore");
+        } else
+        {
+            highScoreText.text = "High Score: 0";
+        }
         if (!loading)
         {
             loadingScreen.SetActive(false);
@@ -121,7 +127,7 @@ public class MainMenuManager : MonoBehaviour
             PlayerPrefs.SetString("Money", "99999999");
             PlayerPrefs.Save();
         }
-        if (long.Parse(PlayerPrefs.GetString("HighScore")) < 0)
+        if (PlayerPrefs.HasKey("HighScore") && long.Parse(PlayerPrefs.GetString("HighScore")) < 0)
         {
             PlayerPrefs.SetString("HighScore", "0");
             PlayerPrefs.Save();
