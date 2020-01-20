@@ -45,10 +45,12 @@ public class GameController : MonoBehaviour
     [HideInInspector] public bool won = false;
     [HideInInspector] public bool paused = false;
     [HideInInspector] public long wave = 1;
+    [HideInInspector] public long score = 0;
     [HideInInspector] public GameObject currentBoss;
     private long bossMaxHealth = 0;
-    private long moneyRewardGoal = 6;
+    private long moneyRewardGoal = 6; //Endless only
     private bool completed = false;
+    private bool newHighScore = false; //Endless only
     private bool playedLoseSound = false, playedWinSound = false;
     private ClickSources clickSource = ClickSources.GamePaused;
     private bool loading = false;
@@ -177,6 +179,20 @@ public class GameController : MonoBehaviour
         {
             clickSource = ClickSources.GameOver;
             if (!loading && !quitGameMenu.enabled) gameOverMenu.enabled = true;
+            if (gamemode == Gamemodes.Endless && !newHighScore)
+            {
+                newHighScore = true;
+                if (!PlayerPrefs.HasKey("HighScore") && score > 0)
+                {
+                    PlayerPrefs.SetString("HighScore", score.ToString());
+                    StartCoroutine(showNewHighScore());
+                } else if (PlayerPrefs.HasKey("HighScore") && score > long.Parse(PlayerPrefs.GetString("HighScore")))
+                {
+                    PlayerPrefs.SetString("HighScore", score.ToString());
+                    StartCoroutine(showNewHighScore());
+                }
+                PlayerPrefs.Save();
+            }
             if (audioSource && loseJingle && !playedLoseSound)
             {
                 playedLoseSound = true;
@@ -224,7 +240,7 @@ public class GameController : MonoBehaviour
             waveText.text = "WAVE " + wave + "/" + enemyGroups.LongLength;
         } else if (gamemode == Gamemodes.Endless)
         {
-            waveText.text = "WAVE " + wave;
+            if (!newHighScore) waveText.text = "WAVE " + wave;
         }
         if (!currentBoss)
         {
@@ -271,7 +287,7 @@ public class GameController : MonoBehaviour
             PlayerPrefs.SetString("Money", "99999999");
             PlayerPrefs.Save();
         }
-        if (long.Parse(PlayerPrefs.GetString("HighScore")) < 0)
+        if (PlayerPrefs.HasKey("HighScore") && long.Parse(PlayerPrefs.GetString("HighScore")) < 0)
         {
             PlayerPrefs.SetString("HighScore", "0");
             PlayerPrefs.Save();
@@ -424,6 +440,20 @@ public class GameController : MonoBehaviour
             StartCoroutine(spawnWaves());
             waveText.enabled = false;
         }
+    }
+
+    IEnumerator showNewHighScore()
+    {
+        while (waveText.enabled) yield return null;
+        for (int i = 0; i < 3; i++)
+        {
+            waveText.enabled = true;
+            waveText.text = "NEW HIGH SCORE!";
+            yield return new WaitForSeconds(0.5f);
+            waveText.enabled = false;
+            yield return new WaitForSeconds(0.5f);
+        }
+        waveText.enabled = false;
     }
 
     IEnumerator loadScene(string scene)
