@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
                 Instantiate(coin, transform.position, Quaternion.Euler(0, 0, 0));
                 dropped = true;
             }
-            if (GameController.instance.gamemode == GameController.Gamemodes.Endless) GameController.instance.score += score;
+            if (GameController.instance.gamemode == GameController.Gamemodes.Endless && score > 0) GameController.instance.score += score;
             if (explosion) Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, 0));
             Destroy(gameObject);
         }
